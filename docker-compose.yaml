@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  imgproxy:
+    image: "darthsim/imgproxy:v3.0.0.${VERSION}"
+    environment:
+      - IMGPROXY_BIND=0.0.0.0:8000
+      - IMGPROXY_KEY=943b421c9eb07c830af81030552c86009268de4e532ba2ee2eab8247c6da0881
+      - IMGPROXY_SALT=520f986b998545b4785e0defbc4f3c1203f22de2374a3d53cb7a7fe9fea309c5
+    ports:
+      - 127.0.0.1:8000:8000
